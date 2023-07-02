@@ -11,6 +11,8 @@ RUN coursier install --channel https://disneystreaming.github.io/coursier.json s
 
 ENV PATH="${PATH}:/root/.local/share/coursier/bin"
 
+WORKDIR /app
+
 ENTRYPOINT [ "smithytranslate" ]
 
 CMD [ "smithytranslate" ]
